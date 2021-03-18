@@ -1,0 +1,29 @@
+.header-container{
+    position: relative;
+    height:350px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-image: url('https://wallpaperaccess.com/full/2514318.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+  
+}
+.header-container::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height:350px;
+    width: 100%;
+    background: rgb(29 29 29);
+    opacity: 0.5;
+}
+.header-container > h1{
+    position: relative;
+    color: white;
+    font-weight: 700;
+}
