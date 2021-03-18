@@ -27,3 +27,6 @@
     color: white;
     font-weight: 700;
 }
+.header-container > img{
+    position: relative;
+}

@@ -1,10 +1,13 @@
 import React from 'react';
 import { Card, Col, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './clubList.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 const ClubList = (props) => {
-    console.log(props);
     const {name, logo, sportsType} = props.club;
+    const exploreFunc = props.exploreFunc;
     return (
         <Col md={4} sm={12}  className="mb-5 text-center">
             <Card>
@@ -14,7 +17,7 @@ const ClubList = (props) => {
                     <Card.Text>
                     Sports type: {sportsType}
                     </Card.Text>
-                    <Button className="exp-btn">Go somewhere</Button>
+                    <Button onClick={() => exploreFunc(props.club)}><Link className="exp-btn" to="/explore">Explore &nbsp;<FontAwesomeIcon icon={faArrowRight} /></Link></Button>
                 </Card.Body>
             </Card>
         </Col>

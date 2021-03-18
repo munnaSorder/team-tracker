@@ -3,3 +3,9 @@
     height: 190px;
     padding: 20px;
 }
+.exp-btn {
+    color: white;
+}
+.exp-btn:hover {
+    color: rgb(196, 196, 196);
+}

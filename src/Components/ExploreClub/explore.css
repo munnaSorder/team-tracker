@@ -1,0 +1,11 @@
+.explore-container{
+    background-color: rgb(14 10 42);
+}
+.container{
+    color: white;
+}
+.card-section{
+    padding: 20px;
+    background-color:rgb(58 66 255);
+    border-radius:15px;
+}
